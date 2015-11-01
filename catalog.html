@@ -5,205 +5,212 @@
     <title>Страница каталога</title>
   </head>
   <body>
-    <div class="l-page-wrap">
-      <header class="page-header">
-        <div class="l-container clearfix">
-          <nav class="main-nav">
-            <ul class="main-nav__list">
-              <li class="main-nav__item"><a class="main-nav__link">Главная</a></li>
-              <li class="main-nav__item"><a class="main-nav__link">Информация</a></li>
-              <li class="main-nav__item"><a class="main-nav__link">Новости</a></li>
-              <li class="main-nav__item"><a class="main-nav__link">Прайс-лист</a></li>
-              <li class="main-nav__item"><a class="main-nav__link--is-active">Магазин</a></li>
-              <li class="main-nav__item"><a class="main-nav__link">Контакты</a></li>
-            </ul>
-          </nav>
-          <div class="user-block"><a class="user-block__login">Вход</a></div>
+    <header class="main-header">
+      <div class="container clearfix">
+        <nav class="main-navigation">
+          <ul>
+            <li class="active">
+              <a href="#">Главная</a>
+            </li>
+            <li>
+              <a href="#">Информация</a>
+            </li>
+            <li>
+              <a href="#">Новости</a>
+            </li>
+            <li>
+              <a href="#">Прайс-лист</a>
+            </li>
+            <li>
+              <a href="#">Магазин</a>
+            </li>
+            <li>
+              <a href="#">Контакты</a>
+            </li>
+          </ul>
+        </nav>
+        <div class="user-block">
+          <a href="#" class="login">Вход</a>
         </div>
-      </header>
-      <main class="page-main">
-        <div class="l-container">
-          <h1>Набор для путешествий «Baxter of California»</h1>
-          <section class="breadcrumbs">
-            <ul class="breadcrumbs__list">
-              <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"></a></li>
-              <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"></a></li>
-              <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link"></a></li>
-              <li class="breadcrumbs__item"><a href="#" class="breadcrumbs__link--is-active"></a></li>
-            </ul>
+      </div>
+    </header>
+    <main class="main-content">
+      <div class="container">
+        <h1>Средства для ухода</h1>
+        <ul class="breadcrumbs">
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li><a href="#"></a></li>
+          <li class="is-active"><a href="#"></a></li>
+        </ul>
+        <aside class="aside-left">
+          <form class="filter">
+            <fieldset>
+              <legend>Производители:</legend>
+              <ul>
+                <li>
+                  <label for="prod1">
+                    <input type="checkbox" name="prod" id="prod1">Baxter of California
+                  </label>
+                </li>
+                <li>
+                  <label for="prod2">
+                    <input type="checkbox" name="prod" id="prod2">Mr Natty
+                  </label>
+                </li>
+                <li>
+                  <label for="prod3">
+                    <input type="checkbox" name="prod" id="prod3">Suavecito
+                  </label>
+                </li>
+                <li>
+                  <label for="prod4">
+                    <input type="checkbox" name="prod4" id="prod4">Malin+Goetz
+                  </label>
+                </li>
+                <li>
+                  <label for="prod5">
+                    <input type="checkbox" name="prod5" id="prod5">Murray’s
+                  </label>
+                </li>
+                <li>
+                  <label for="prod6">
+                    <input type="checkbox" name="prod6" id="prod6">American Crew
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <fieldset>
+              <legend>Группы товаров:</legend>
+              <ul>
+                <li>
+                  <label for="group1">
+                    <input type="radio" name="group" id="group1">
+                  </label>
+                </li>
+                <li>
+                  <label for="group2">
+                    <input type="radio" name="group" id="group2">
+                  </label>
+                </li>
+                <li>
+                  <label for="group3">
+                    <input type="radio" name="group" id="group3">
+                  </label>
+                </li>
+              </ul>
+            </fieldset>
+            <button type="submit" name="button" value="Показать"></button>
+          </form>
+        </aside>
+        <div class="content-right">
+          <section class="products-grid">
+            <div class="products-item">
+              <img src="http://placehold.it/220x165" alt="product" width="220" height="165">
+              <p class="products-category">
+                Набор для путешествий
+              </p>
+              <p class="products-title">
+                «Baxter of California»
+              </p>
+              <div class="btn-group">
+                <div class="price">2 900 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="http://placehold.it/220x165" alt="product" width="220" height="165">
+              <p class="products-category">
+                Увлажняющий кондиционер
+              </p>
+              <p class="products-title">
+                «Baxter of California»
+              </p>
+              <div class="btn-group">
+                <div class="price">750 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
+            <div class="products-item">Гель для волос «SUAVECITO»
+              <img src="http://placehold.it/220x165" alt="product" width="220" height="165">
+              <p class="products-category">
+                Гель для волос
+              </p>
+              <p class="products-title">
+                «Suavecito»
+              </p>
+              <div class="btn-group">
+                <div class="price">290 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
+            <div class="products-item">Глина для укладки волос «American crew»
+              <img src="http://placehold.it/220x165" alt="product" width="220" height="165">
+              <p class="products-category">
+                Гель для укладки волос
+              </p>
+              <p class="products-title">
+                «American Crew»
+              </p>
+              <div class="btn-group">
+                <div class="price">500 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="http://placehold.it/220x165" alt="product" width="220" height="165">
+              <p class="products-category">
+                Гель для волос
+              </p>
+              <p class="products-title">
+                «American Crew»
+              </p>
+              <div class="btn-group">
+                <div class="price">300 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
+            <div class="products-item">
+              <img src="http://placehold.it/220x165" alt="product" width="220" height="165">
+              <p class="products-category">
+                Набор для бритья
+              </p>
+              <p class="products-title">
+                «Baxter of California»
+              </p>
+              <div class="btn-group">
+                <div class="price">3 900 руб.</div>
+                <a href="#" class="btn">Купить</a>
+              </div>
+            </div>
           </section>
-          <aside class="page-aside">
-            <section class="filter">
-              <form>
-                <fieldset>
-                  <legend class="filter__title">Производители</legend>
-                  <ul class="filter__list">
-                    <li class="filter__item">
-                      <span>
-                        <label for="prod1">
-                          <input type="checkbox" name="prod1" id="prod1" class="filter__checkbox">Baxter of California
-                        </label>
-                      </span>
-                    </li>
-                    <li class="filter__item">
-                      <span>
-                        <label for="prod2">
-                          <input type="checkbox" name="prod2" id="prod2" class="filter__checkbox">Mr Natty
-                        </label>
-                      </span>
-                    </li>
-                    <li class="filter__item">
-                      <span>
-                        <label for="prod3">
-                          <input type="checkbox" name="prod3" id="prod3" class="filter__checkbox">Suavecito
-                        </label>
-                      </span>
-                    </li>
-                    <li class="filter__item">
-                      <span>
-                        <label for="prod4">
-                          <input type="checkbox" name="prod4" id="prod4" class="filter__checkbox">Malin+Goetz
-                        </label>
-                      </span>
-                    </li>
-                    <li class="filter__item">
-                      <span>
-                        <label for="prod5">
-                          <input type="checkbox" name="prod5" id="prod5" class="filter__checkbox">Murray’s
-                        </label>
-                      </span>
-                    </li>
-                    <li class="filter__item">
-                      <span>
-                        <label for="prod6">
-                          <input type="checkbox" name="prod6" id="prod6" class="filter__checkbox">American Crew
-                        </label>
-                      </span>
-                    </li>
-                  </ul>
-                </fieldset>
-                <fieldset>
-                  <legend class="filter__title"></legend>
-                  <ul class="filter__list">
-                    <li class="filter__item">
-                      <span>
-                        <label for="group1">
-                          <input type="radio" name="group1" id="group1" class="filter__radio">
-                        </label>
-                      </span>
-                    </li>
-                    <li class="filter__item">
-                      <span>
-                        <label for="group2">
-                          <input type="radio" name="group2" id="group2" class="filter__radio">
-                        </label>
-                      </span>
-                    </li>
-                    <li class="filter__item">
-                      <span>
-                        <label for="group3">
-                          <input type="radio" name="group3" id="group3" class="filter__radio">
-                        </label>
-                      </span>
-                    </li>
-                  </ul>
-                </fieldset>
-                <button type="submit" name="button" value="Показать"></button>
-              </form>
-            </section>
-          </aside>
-          <div class="l-column-main">
-            <section class="products grid">
-              <ul class="product__list">
-                <li class="product__item">
-                  <div class="product__img"><img src="http://placehold.it/220x165" alt="product" width="220"
-                                                 height="165"></div>
-                  <div class="product__title">Набор для путешествий «Baxter of California»</div>
-                  <div class="btn-group">
-                    <div class="price">2 900 руб.</div>
-                    <a href="#" class="btn">Купить</a>
-                  </div>
-                </li>
-                <li class="product__item">
-                  <div class="product__img"><img src="http://placehold.it/220x165" alt="product" width="220"
-                                                 height="165"></div>
-                  <div class="product__title">Увлажняющий кондиционер «Baxter of California»</div>
-                  <div class="btn-group">
-                    <div class="price">750 руб.</div>
-                    <a href="#" class="btn">Купить</a>
-                  </div>
-                </li>
-                <li class="product__item">Гель для волос «SUAVECITO»
-                  <div class="product__img"><img src="http://placehold.it/220x165" alt="product" width="220"
-                                                 height="165"></div>
-                  <div class="product__title"></div>
-                  <div class="btn-group">
-                    <div class="price">290 руб.</div>
-                    <a href="#" class="btn">Купить</a>
-                  </div>
-                </li>
-                <li class="product__item">Глина для укладки волос «American crew»
-                  <div class="product__img"><img src="http://placehold.it/220x165" alt="product" width="220"
-                                                 height="165"></div>
-                  <div class="product__title"></div>
-                  <div class="btn-group">
-                    <div class="price">500 руб.</div>
-                    <a href="#" class="btn">Купить</a>
-                  </div>
-                </li>
-                <li class="product__item">Гель для волос «AMERICAN CREW»
-                  <div class="product__img"><img src="http://placehold.it/220x165" alt="product" width="220"
-                                                 height="165"></div>
-                  <div class="product__title"></div>
-                  <div class="btn-group">
-                    <div class="price">300 руб.</div>
-                    <a href="#" class="btn">Купить</a>
-                  </div>
-                </li>
-                <li class="product__item">
-                  <div class="product__img"><img src="http://placehold.it/220x165" alt="product" width="220"
-                                                 height="165"></div>
-                  <div class="product__title">Набор для бритья «Baxter of California»</div>
-                  <div class="btn-group">
-                    <div class="price">3 900 руб.</div>
-                    <a href="#" class="btn">Купить</a>
-                  </div>
-                </li>
-              </ul>
-            </section>
-            <section class="pagination">
-              <ul class="pagination__list">
-                <li class="pagination__item"><a href="#">1</a></li>
-                <li class="pagination__item"><span>2</span></li>
-                <li class="pagination__item"><a href="#">3</a></li>
-                <li class="pagination__item"><a href="#">4</a></li>
-              </ul>
-            </section>
-          </div>
+          <ul class="pagination">
+            <li><a href="#">1</a></li>
+            <li><span>2</span></li>
+            <li><a href="#">3</a></li>
+            <li><a href="#">4</a></li>
+          </ul>
         </div>
-      </main>
-    </div>
-    <footer class="page-footer">
-      <div class="l-container clearfix">
-        <section class="footer__contacts contacts">
+      </div>
+    </main>
+    <footer class="main-footer">
+      <div class="container clearfix">
+        <div class="footer-contacts">
           Барбершоп «Бородинский»<br>
           Адрес: г. Санкт-Петербург, Б. Конюшенная, д. 19/8<br>
           <a href="#">Как нас найти?</a><br>
           телефон: +7 (495) 666-02-66
-        </section>
-        <section class="footer__social social">
+        </div>
+        <div class="footer-social">
           <p>Давайте дружить!</p>
-          <ul class="social__list">
-            <li class="social__item"><a href="#" class="social-btn social-btn-vk">Вконтакте</a></li>
-            <li class="social__item"><a href="#" class="social-btn social-btn-fb">Фейсбук</a></li>
-            <li class="social__item"><a href="#" class="social-btn social-btn-inst social-btn--is-hover">Инстаграм</a>
-            </li>
-          </ul>
-        </section>
-        <section class="footer__copyright">
+          <a href="#" class="social-btn social-btn-vk">Вконтакте</a>
+          <a href="#" class="social-btn social-btn-fb">Фейсбук</a>
+          <a href="#" class="social-btn social-btn-inst">Инстаграм</a>
+        </div>
+        <div class="footer-copyright">
           <p>Дизайн сайта:</p>
           <a href="#" class="btn">htmlacademy.ru</a>
-        </section>
+        </div>
       </div>
     </footer>
   </body>
